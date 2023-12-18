@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.linear-gradient {
+  background: linear-gradient(
+    179.14deg,
+    rgba(32, 18, 63, 0) -7.14%,
+    #000000 87.01%
+  );
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8);
+}
+
+.head_text {
+  font-family: 'Nunito', sans-serif;
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] dark:text-white text-black sm:text-6xl;
+}
+
+.prime_gradient {
+  @apply dark:bg-gradient-to-r dark:from-pink-300 dark:via-purple-300 dark:to-indigo-400 bg-gradient-to-r from-indigo-400 via-indigo-500 to-violet-500 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+}
+
+
+
+.rainbow_gradient {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  z-index: 3;
+  display: block;
+  background-image: radial-gradient(at 27% 37%, hsla(215, 98%, 61%, 1) 0px, transparent 0%),
+                    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+                    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+                    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+                    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+                    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+                    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+  filter: blur(100px) saturate(150%);
+  opacity: 0.15;
+}
+
+
+.prime_font {
+  font-family: 'Nunito', sans-serif;
+}
