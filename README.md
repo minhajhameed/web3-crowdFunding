@@ -54,5 +54,5 @@ To set up and run this dApp locally, follow these steps:
 This project is licensed under the [MIT License](LICENSE).
 
 ## Contact:
-For any questions or feedback, feel free to reach out to us at [email@example.com](mailto:minhajham@yahoo.com).
+For any questions or feedback, feel free to reach out to us at [minhajham@yahoo.com](mailto:minhajham@yahoo.com).
 
