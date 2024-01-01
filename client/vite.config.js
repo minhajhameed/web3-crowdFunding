@@ -1,11 +1,13 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import { nodePolyfills } from "vite-plugin-node-polyfills";
+import dotenv from "dotenv";
 
-// https://vitejs.dev/config/
+dotenv.config(); // Load environment variables from .env file
+
 export default defineConfig({
   plugins: [react(), nodePolyfills()],
   define: {
-    "process.env": {},
+    "process.env": process.env, // Expose loaded environment variables
   },
 });
